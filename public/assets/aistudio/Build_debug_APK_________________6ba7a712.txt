@@ -1,0 +1,190 @@
+2026-11-16T20:10:03.1191771Z
+2026-11-16T20:10:03.1194123Z 10.8 Open Source Software. In the event Open Source software is included with Evaluation Software, such Open Source software is licensed pursuant to the applicable Open Source software license agreement identified in the Open Source software comments in the applicable source code file(s) and/or file header as indicated in the Evaluation Software. Additional detail may be available (where applicable) in the accompanying on-line documentation. With respect to the Open Source software, nothing in this Agreement limits any rights under, or grants rights that supersede, the terms of any applicable Open Source software license agreement.
+2026-11-16T20:10:03.1196347Z ---------------------------------------
+2026-11-16T20:10:03.1196656Z Accept? (y/N): All SDK package licenses accepted
+2026-11-16T20:10:03.1196868Z
+2026-11-16T20:10:03.1197149Z [command]/usr/local/lib/android/sdk/cmdline-tools/16.0/bin/sdkmanager platforms;android-34
+2026-11-16T20:10:03.9360543Z Loading package information...
+2026-11-16T20:10:04.0447861Z Loading local repository...
+2026-11-16T20:10:04.0456762Z [                                       ] 3% Loading local repository...
+2026-11-16T20:10:04.0556041Z [                                       ] 3% Fetch remote repository...
+2026-11-16T20:10:04.4346170Z [=                                      ] 3% Fetch remote repository...
+2026-11-16T20:10:04.5317693Z [=                                      ] 4% Fetch remote repository...
+2026-11-16T20:10:04.5747567Z [=                                      ] 5% Fetch remote repository...
+2026-11-16T20:10:04.6467035Z [==                                     ] 5% Fetch remote repository...
+2026-11-16T20:10:04.7445201Z [==                                     ] 6% Fetch remote repository...
+2026-11-16T20:10:04.8345734Z [==                                     ] 7% Fetch remote repository...
+2026-11-16T20:10:04.8374391Z [==                                     ] 7% Computing updates...
+2026-11-16T20:10:04.8484592Z [===                                    ] 8% Computing updates...
+2026-11-16T20:10:04.8545179Z [===                                    ] 10% Computing updates...
+2026-11-16T20:10:04.8547977Z [=======================================] 100% Computing updates...
+2026-11-16T20:10:04.8548566Z
+2026-11-16T20:10:04.9014345Z [command]/usr/local/lib/android/sdk/cmdline-tools/16.0/bin/sdkmanager build-tools;34.0.0
+2026-11-16T20:10:05.7410590Z Loading package information...
+2026-11-16T20:10:05.8550460Z Loading local repository...
+2026-11-16T20:10:05.8552690Z [                                       ] 3% Loading local repository...
+2026-11-16T20:10:05.8644061Z [                                       ] 3% Fetch remote repository...
+2026-11-16T20:10:06.2015343Z [=                                      ] 3% Fetch remote repository...
+2026-11-16T20:10:06.2886822Z [=                                      ] 4% Fetch remote repository...
+2026-11-16T20:10:06.3299074Z [=                                      ] 5% Fetch remote repository...
+2026-11-16T20:10:06.4261267Z [==                                     ] 5% Fetch remote repository...
+2026-11-16T20:10:06.5186256Z [==                                     ] 6% Fetch remote repository...
+2026-11-16T20:10:06.5925013Z [==                                     ] 7% Fetch remote repository...
+2026-11-16T20:10:06.5954717Z [==                                     ] 7% Computing updates...
+2026-11-16T20:10:06.6044756Z [===                                    ] 8% Computing updates...
+2026-11-16T20:10:06.6105794Z [===                                    ] 10% Computing updates...
+2026-11-16T20:10:06.6107170Z [=======================================] 100% Computing updates...
+2026-11-16T20:10:06.6108301Z
+===== Build debug APK/5_Build debug APK.txt =====
+﻿2026-11-16T20:10:06.6735937Z ##[group]Run set -o pipefail
+2026-11-16T20:10:06.6736317Z [36;1mset -o pipefail[0m
+2026-11-16T20:10:06.6736620Z [36;1mLOG="$RUNNER_TEMP/klencod-gradle.log"[0m
+2026-11-16T20:10:06.6736931Z [36;1m[0m
+2026-11-16T20:10:06.6737137Z [36;1mif [ -f gradlew ]; then[0m
+2026-11-16T20:10:06.6737443Z [36;1m  echo "✅ Using Gradle Wrapper (gradlew)"[0m
+2026-11-16T20:10:06.6737766Z [36;1m  chmod +x gradlew || true[0m
+2026-11-16T20:10:06.6738087Z [36;1m  ./gradlew --no-daemon --build-cache --parallel \[0m
+2026-11-16T20:10:06.6738482Z [36;1m    :app:assembleDebug -x lint -x test 2>&1 | tee "$LOG"[0m
+2026-11-16T20:10:06.6738813Z [36;1melse[0m
+2026-11-16T20:10:06.6739087Z [36;1m  echo "⚠️ gradlew غير موجود — استخدام gradle من النظام"[0m
+2026-11-16T20:10:06.6739486Z [36;1m  echo "ℹ️ هذا شائع في المشاريع المستوردة من الخارج"[0m
+2026-11-16T20:10:06.6739878Z [36;1m  gradle --no-daemon --build-cache --parallel \[0m
+2026-11-16T20:10:06.6740261Z [36;1m    :app:assembleDebug -x lint -x test 2>&1 | tee "$LOG"[0m
+2026-11-16T20:10:06.6740669Z [36;1mfi[0m
+2026-11-16T20:10:06.6796557Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-16T20:10:06.6796935Z env:
+2026-11-16T20:10:06.6797252Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-11-16T20:10:06.6797750Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-11-16T20:10:06.6798168Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2026-11-16T20:10:06.6798475Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2026-11-16T20:10:06.6798765Z ##[endgroup]
+2026-11-16T20:10:06.6898959Z ✅ Using Gradle Wrapper (gradlew)
+2026-11-16T20:10:06.7917110Z Downloading https://services.gradle.org/distributions/gradle-9.3.1-bin.zip
+2026-11-16T20:10:08.3219792Z .............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+2026-11-16T20:10:09.6711018Z
+2026-11-16T20:10:09.6712668Z Welcome to Gradle 9.3.1!
+2026-11-16T20:10:09.6713212Z
+2026-11-16T20:10:09.6719276Z Here are the highlights of this release:
+2026-11-16T20:10:09.6720194Z  - Test reporting improvements
+2026-11-16T20:10:09.6721096Z  - Error and warning improvements
+2026-11-16T20:10:09.6722201Z  - Build authoring improvements
+2026-11-16T20:10:09.6722572Z
+2026-11-16T20:10:09.6723121Z For more details see https://docs.gradle.org/9.3.1/release-notes.html
+2026-11-16T20:10:09.6723682Z
+2026-11-16T20:10:09.7708304Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-11-16T20:10:11.0705286Z Daemon will be stopped at the end of the build
+2026-11-16T20:10:12.4705643Z Calculating task graph as no cached configuration is available for tasks: :app:assembleDebug
+2026-11-16T20:11:33.6749180Z > Task :app:generateDebugAssets UP-TO-DATE
+2026-11-16T20:11:33.6774578Z > Task :app:preBuild UP-TO-DATE
+2026-11-16T20:11:33.6804576Z > Task :app:ensureDebugKeystore SKIPPED
+2026-11-16T20:11:33.7707087Z > Task :app:preDebugBuild UP-TO-DATE
+2026-11-16T20:11:33.7744859Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-11-16T20:11:33.7781705Z
+2026-11-16T20:11:33.7814625Z > Task :app:processDebugGoogleServices
+2026-11-16T20:11:33.7815541Z File google-services.json is missing.
+2026-11-16T20:11:33.7845514Z The Google Services Plugin cannot function without it.
+2026-11-16T20:11:33.7859049Z Searched locations: /home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3/app/src/debug/google-services.json, /home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3/app/src/debug/google-services.json, /home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3/app/src/google-services.json, /home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3/app/src/debug/google-services.json, /home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3/app/src/Debug/google-services.json, /home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3/app/google-services.json
+2026-11-16T20:11:33.8727929Z
+2026-11-16T20:11:33.8750500Z > Task :app:generateDebugResources
+2026-11-16T20:11:33.8774549Z > Task :app:generateDebugBuildConfig
+2026-11-16T20:11:34.1724846Z > Task :app:packageDebugResources
+2026-11-16T20:11:37.5704893Z > Task :app:javaPreCompileDebug
+2026-11-16T20:11:37.9704173Z > Task :app:mergeDebugAssets
+2026-11-16T20:11:37.9704866Z > Task :app:compressDebugAssets
+2026-11-16T20:11:37.9705461Z > Task :app:desugarDebugFileDependencies
+2026-11-16T20:11:39.6724988Z > Task :app:processDebugNavigationResources
+2026-11-16T20:11:40.4704031Z > Task :app:parseDebugLocalResources
+2026-11-16T20:11:41.1704615Z > Task :app:generateDebugRFile
+2026-11-16T20:11:41.1722262Z > Task :app:mapDebugSourceSetPaths
+2026-11-16T20:11:41.2765895Z > Task :app:checkDebugAarMetadata
+2026-11-16T20:11:41.4706241Z > Task :app:compileDebugNavigationResources
+2026-11-16T20:11:41.5720681Z > Task :app:createDebugCompatibleScreenManifests
+2026-11-16T20:11:41.5724628Z > Task :app:extractDeepLinksDebug
+2026-11-16T20:11:41.7713521Z > Task :app:checkDebugDuplicateClasses
+2026-11-16T20:11:42.0705770Z > Task :app:processDebugMainManifest
+2026-11-16T20:11:57.2783653Z ##[error]Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException: Cannot invoke "ksp.com.intellij.openapi.application.Application.getService(java.lang.Class)" because the return value of "ksp.com.intellij.openapi.application.ApplicationManager.getApplication()" is null
+2026-11-16T20:11:57.2818340Z 	at ksp.com.intellij.openapi.fileEditor.FileDocumentManager.getInstance(FileDocumentManager.java:35)
+2026-11-16T20:11:57.2820396Z 	at ksp.com.intellij.openapi.fileTypes.BinaryFileTypeDecompilers.lambda$notifyDecompilerSetChange$1(BinaryFileTypeDecompilers.java:29)
+2026-11-16T20:11:57.2874804Z 	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+2026-11-16T20:11:57.2934697Z 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+2026-11-16T20:11:57.2964599Z 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+2026-11-16T20:11:57.3004659Z 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+2026-11-16T20:11:57.3005805Z 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2026-11-16T20:11:57.3007525Z 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+2026-11-16T20:11:57.3008991Z 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2026-11-16T20:11:57.3010358Z 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2026-11-16T20:11:57.3011938Z 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2026-11-16T20:11:57.3013497Z 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2026-11-16T20:11:57.3015136Z 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2026-11-16T20:11:57.3016465Z 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2026-11-16T20:11:57.3017720Z 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2026-11-16T20:11:57.4724754Z > Task :app:kspDebugKotlin
+2026-11-16T20:12:11.2704888Z > Task :app:mergeDebugResources
+2026-11-16T20:12:11.6704920Z > Task :app:processDebugManifest
+2026-11-16T20:12:11.7714917Z > Task :app:mergeExtDexDebug
+2026-11-16T20:12:12.0755018Z > Task :app:mergeLibDexDebug
+2026-11-16T20:12:27.4705873Z > Task :app:compileDebugKotlin
+2026-11-16T20:12:41.6724867Z > Task :app:processDebugManifestForPackage
+2026-11-16T20:12:47.4722395Z > Task :app:mergeDebugJniLibFolders
+2026-11-16T20:12:48.2725000Z > Task :app:processDebugResources
+2026-11-16T20:12:48.3705030Z > Task :app:validateSigningDebug FAILED
+2026-11-16T20:12:48.3714659Z > Task :app:mergeDebugNativeLibs
+2026-11-16T20:13:31.2702466Z
+2026-11-16T20:13:31.2726558Z FAILURE: Build failed with an exception.
+2026-11-16T20:13:31.2727451Z
+2026-11-16T20:13:31.2728078Z * What went wrong:
+2026-11-16T20:13:31.2728750Z Execution failed for task ':app:validateSigningDebug'.
+2026-11-16T20:13:31.2734720Z > Keystore file '/home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3/debug.keystore' not found for signing config 'debugConfig'.
+2026-11-16T20:13:31.2735690Z
+2026-11-16T20:13:31.2735828Z * Try:
+2026-11-16T20:13:31.2736377Z > Run with --stacktrace option to get the stack trace.
+2026-11-16T20:13:31.2737306Z > Run with --info or --debug option to get more log output.
+2026-11-16T20:13:31.2738333Z > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+2026-11-16T20:13:31.2739255Z > Get more help at https://help.gradle.org.
+2026-11-16T20:13:31.2739719Z
+2026-11-16T20:13:31.2740069Z BUILD FAILED in 3m 24s
+2026-11-16T20:13:31.2740454Z 29 actionable tasks: 29 executed
+2026-11-16T20:13:31.2740815Z Configuration cache entry stored.
+2026-11-16T20:13:31.7168341Z ##[error]Process completed with exit code 1.
+===== Build debug APK/6_Print compiler diagnostics on failure.txt =====
+﻿2026-11-16T20:13:31.7221340Z ##[group]Run LOG="$RUNNER_TEMP/klencod-gradle.log"
+2026-11-16T20:13:31.7221999Z [36;1mLOG="$RUNNER_TEMP/klencod-gradle.log"[0m
+2026-11-16T20:13:31.7222597Z [36;1mecho "===== Klencod compiler diagnostics ====="[0m
+2026-11-16T20:13:31.7223155Z [36;1mif [[ -f "$LOG" ]]; then[0m
+2026-11-16T20:13:31.7224212Z [36;1m  grep -E 'error:|warning:|FAILED|Compilation failed|BUILD FAILED|What went wrong' "$LOG" | tail -n 120 || true[0m
+2026-11-16T20:13:31.7225114Z [36;1melse[0m
+2026-11-16T20:13:31.7225530Z [36;1m  echo "Gradle output file was not created."[0m
+2026-11-16T20:13:31.7226045Z [36;1mfi[0m
+2026-11-16T20:13:31.7289975Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-16T20:13:31.7290553Z env:
+2026-11-16T20:13:31.7291056Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-11-16T20:13:31.7291895Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-11-16T20:13:31.7292811Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2026-11-16T20:13:31.7293367Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2026-11-16T20:13:31.7293996Z ##[endgroup]
+2026-11-16T20:13:31.7382431Z ===== Klencod compiler diagnostics =====
+2026-11-16T20:13:31.7414658Z > Task :app:validateSigningDebug FAILED
+2026-11-16T20:13:31.7415249Z * What went wrong:
+2026-11-16T20:13:31.7415682Z BUILD FAILED in 3m 24s
+===== Build debug APK/13_Post Set up Java 17.txt =====
+﻿2026-11-16T20:13:31.7567339Z Post job cleanup.
+2026-11-16T20:13:31.8916641Z (node:3015) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-16T20:13:31.8917473Z (Use `node --trace-deprecation ...` to show where the warning was created)
+===== Build debug APK/14_Post Checkout project.txt =====
+﻿2026-11-16T20:13:31.9083175Z Post job cleanup.
+2026-11-16T20:13:32.0101612Z [command]/usr/bin/git version
+2026-11-16T20:13:32.0154398Z git version 2.56.1
+2026-11-16T20:13:32.0205338Z Temporarily overriding HOME='/home/runner/work/_temp/609b18d4-24d0-4227-a9de-5a15bcdade86' before making global git config changes
+2026-11-16T20:13:32.0206866Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-16T20:13:32.0228127Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/klencod-kotlin-----0.3/klencod-kotlin-----0.3
+2026-11-16T20:13:32.0286596Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-16T20:13:32.0355384Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-16T20:13:32.0800956Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-16T20:13:32.0848030Z http.https://github.com/.extraheader
+2026-11-16T20:13:32.0865718Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-16T20:13:32.0922476Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-16T20:13:32.1306534Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-16T20:13:32.1347222Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+===== Build debug APK/15_Complete job.txt =====
+﻿2026-11-16T20:13:32.1785777Z Cleaning up orphan processes
+2026-11-16T20:13:32.2128731Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, android-actions/setup-android@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

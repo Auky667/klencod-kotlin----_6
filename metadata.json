@@ -1,0 +1,6 @@
+{
+  "name": "ترميم الإسلام",
+  "description": "موسوعة علمية إسلامية شاملة تربط السيرة النبوية بالعقيدة والقرآن والفقه.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

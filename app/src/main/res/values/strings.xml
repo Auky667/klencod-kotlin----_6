@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ترميم الإسلام</string>
+    <string name="app_tagline">علمٌ يُبصّر، وإيمانٌ يُعمّر، وعملٌ يُصلح</string>
+    <string name="app_description">موسوعة علمية إسلامية شاملة تربط السيرة النبوية بالعقيدة والقرآن والفقه.</string>
+    <string name="share_topic_chooser">مشاركة الموضوع</string>
+    <string name="copied_to_clipboard">تم نسخ المحتوى إلى الحافظة</string>
+    <string name="added_to_favorites">أُضيف إلى المفضلة</string>
+    <string name="removed_from_favorites">أُزيل من المفضلة</string>
+</resources>
